@@ -1,0 +1,16 @@
+$default-background: #474171;
+$default-background_light: lighten($default-background, 15%);
+$default-background_dark: darken($default-background, 5%);
+$error-background: #f7dada;
+
+$default-text-color: #3f3f3f;
+$default-text-color_light: lighten($default-text-color, 15%);
+$default-text-color_dark: darken($default-text-color, 5%);
+$error-text: #794b4a;
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,800,800italic,600italic,400italic,300italic,300);
+$default-font: 'Open Sans', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+$code-font: 'Cutive Mono';

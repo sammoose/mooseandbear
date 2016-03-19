@@ -1,0 +1,237 @@
+@import 'assets/scss/vars';
+@import 'assets/scss/reset';
+@import 'assets/scss/elements/header';
+@import 'assets/scss/elements/footer';
+
+code {
+    display: block;
+    background: $default-background;
+    color: $default-text-color_light;
+    font-family: $code-font;
+    font-size: 16px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 615px;
+    margin: 0 auto;
+
+    &.error {
+        background: $error-background;
+        color: $error-text;
+    }
+}
+
+main {
+    background: white;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px calc(5px + 5vw) 0;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        padding-bottom: 35px;
+        font-weight: 300;
+        color: $default-text-color_dark
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
+        padding-bottom: 30px;
+        font-weight: 300;
+        line-height: 1.25;
+        color: $default-text-color;
+    }
+}
+
+q,
+blockquote {
+
+    &:before {
+        content: "\201C";
+    }
+
+    &:after {
+        content: "\201D";
+    }
+
+}
+
+.siteheader {
+    text-decoration: none;
+    color: $default-text-color_dark;
+}
+
+.sad-monkey {
+    margin: 50px auto;
+    border: 3px solid $default-background_dark;
+    display: block;
+    border-radius: 5%;
+    max-width: 100%;
+}
+
+.error-home {
+    text-align: center;
+    text-decoration: none;
+    color: maroon;
+    display: block;
+    padding: 35px;
+    text-transform: capitalize;
+}
+
+.intro-text {
+    text-align: center;
+
+    h1 {
+        display: none;
+    }
+
+    img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+    }
+}
+
+b {
+    color: $default-background_dark;
+    font-weight: 600;
+}
+
+.whatcanwedo {
+    margin: 25px auto 10px;
+    width: 100%;
+    height: 240px;
+    background-color: $default-background;
+    background-image: url(img/whatcanwedo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 750px) {
+        height: 200px;
+    }
+
+    @media (max-width: 465px) {
+        height: 150px;
+    }
+
+    @media (max-width: 320px) {
+        height: 125px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 56px;
+        line-height: 240px;
+
+        @media (max-width: 750px) {
+            font-size: 34px;
+            line-height: 200px;
+        }
+
+        @media (max-width: 475px) {
+            font-size: 22px;
+            line-height: 150px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 18px;
+            line-height: 125px;
+        }
+    }
+}
+
+.section-what {
+    .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px auto;
+        width: 600px;
+        max-width: 100%;
+    }
+
+    .icon-box {}
+
+    .icon {
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background-color: $default-background;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 15px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 450px) {
+            width: 85px;
+            height: 85px;
+        }
+
+        &.--design {
+            background-image: url("img/icon-design.png");
+        }
+
+        &.--develop {
+            background-image: url("img/icon-develop.png");
+        }
+
+        &.--seo {
+            background-image: url("img/icon-seo.png");
+        }
+
+        &.--responsive {
+            background-image: url("img/icon-responsive.png");
+        }
+
+        &.--cms {
+            background-image: url("img/icon-cms.png");
+        }
+
+        &.--bug {
+            background-image: url("img/icon-bug.png");
+        }
+    }
+
+    .description {
+        text-align: center;
+        display: block;
+        font-size: 18px;
+        color: $default-background;
+        padding: 15px 0;
+    }
+}
